@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokeplace.API", "Pokeplace.API\Pokeplace.API.csproj", "{01400ED4-F601-4D26-88A5-14220734A42B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokeplace.Test", "Pokeplace.Test\Pokeplace.Test.csproj", "{3D265908-BDC0-4A31-B667-63AEAC524CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokeplace.Core", "Pokeplace.Core\Pokeplace.Core.csproj", "{B2B64401-A2C5-4F82-B0AA-9D3F4F0B959C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01400ED4-F601-4D26-88A5-14220734A42B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01400ED4-F601-4D26-88A5-14220734A42B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01400ED4-F601-4D26-88A5-14220734A42B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01400ED4-F601-4D26-88A5-14220734A42B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D265908-BDC0-4A31-B667-63AEAC524CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D265908-BDC0-4A31-B667-63AEAC524CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D265908-BDC0-4A31-B667-63AEAC524CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D265908-BDC0-4A31-B667-63AEAC524CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B64401-A2C5-4F82-B0AA-9D3F4F0B959C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B64401-A2C5-4F82-B0AA-9D3F4F0B959C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B64401-A2C5-4F82-B0AA-9D3F4F0B959C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B64401-A2C5-4F82-B0AA-9D3F4F0B959C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F882BC8F-668F-490F-9569-9A2BBE21C0A8}
+	EndGlobalSection
+EndGlobal
