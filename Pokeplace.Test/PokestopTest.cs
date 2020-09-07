@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Pokeplace.Test
 {
-    public class RaidBossTest : BaseTest
+    public class PokestopTest : BaseTest
     {
         [SetUp]
         public void Setup()

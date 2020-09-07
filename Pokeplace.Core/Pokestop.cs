@@ -2,7 +2,7 @@
 
 namespace Pokeplace.Core
 {
-    public class Pokestop : BaseDbEntity
+    public class Pokestop : BaseDbEntity<Pokestop>
     {
         public string Nome { get; set; }
         public decimal Latitude { get; set; }

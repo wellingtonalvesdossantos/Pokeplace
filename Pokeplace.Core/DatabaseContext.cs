@@ -10,7 +10,7 @@ namespace Pokeplace.Core
     {
         public DatabaseContext(string nameOrConnectionString) : base(nameOrConnectionString)
         {
-            
+
         }
 
         public DatabaseContext()
@@ -20,8 +20,9 @@ namespace Pokeplace.Core
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            Configuration.LazyLoadingEnabled = false;
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-
+            
             modelBuilder.Entity<Gym>();
             modelBuilder.Entity<Pokemon>();
             modelBuilder.Entity<PokemonType>();

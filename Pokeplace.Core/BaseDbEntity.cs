@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
+using System.Linq;
+using Pokeplace.Core.ExtensionMethods;
 
 namespace Pokeplace.Core
 {
@@ -11,16 +13,38 @@ namespace Pokeplace.Core
         public int Id { get; set; }
     }
 
-    public class BaseDbEntity<T> : BaseDbEntity where T : class
+    public class BaseDbEntity<T> : BaseDbEntity where T : BaseDbEntity
     {
-        public static DbSet<T> ListAll()
+        public static IQueryable<T> ListAll(params string[] dependencies)
         {
-            return null;
+            var context = BaseDbContext.GetInstance().MainContext;
+            return context.Set<T>().Include(dependencies);
         }
 
-        public static T FetchById(int id)
+        public static T FetchById(int id, params string[] dependencies)
         {
-            return null;
+            return ListAll(dependencies).FirstOrDefault(x => x.Id == id);
+        }
+
+        public void Add()
+        {
+            var context = BaseDbContext.GetInstance().MainContext;
+            context.Entry(this).State = EntityState.Added;
+            context.SaveChanges();
+        }
+
+        public void Update()
+        {
+            var context = BaseDbContext.GetInstance().MainContext;
+            context.Entry(this).State = EntityState.Modified;
+            context.SaveChanges();
+        }
+
+        public void Delete()
+        {
+            var context = BaseDbContext.GetInstance().MainContext;
+            context.Entry(this).State = EntityState.Deleted;
+            context.SaveChanges();
         }
     }
 }

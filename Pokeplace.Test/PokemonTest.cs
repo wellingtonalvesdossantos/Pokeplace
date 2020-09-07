@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Pokeplace.Test
 {
-    public class RaidBossTest : BaseTest
+    public class PokemonTest : BaseTest
     {
         [SetUp]
         public void Setup()
@@ -15,6 +15,7 @@ namespace Pokeplace.Test
         [Test]
         public void Test1()
         {
+            var model = Pokemon.FetchById(2);
             Assert.Pass();
         }
     }

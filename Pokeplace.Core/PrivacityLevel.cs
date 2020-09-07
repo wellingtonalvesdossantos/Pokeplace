@@ -2,7 +2,7 @@
 
 namespace Pokeplace.Core
 {
-    public class PrivacityLevel : BaseDbEntity
+    public class PrivacityLevel : BaseDbEntity<PrivacityLevel>
     {
         public string Nome { get; set; }
     }

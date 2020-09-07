@@ -123,10 +123,12 @@ create table RaidMember
 (
 	Id INT IDENTITY(1,1) NOT NULL,
 	Registro DATETIME NOT NULL,
+	RaidId INT NOT NULL,
 	TrainerId INT NOT NULL,
 	PrecisaConvite BIT NOT NULL,
 	ConviteTrainerId INT NULL,
 	CONSTRAINT PK_RaidMember PRIMARY KEY ([Id]),
+	CONSTRAINT FK_RaidMember_Raid FOREIGN KEY ([TrainerId]) REFERENCES Raid ([Id]),
 	CONSTRAINT FK_RaidMember_Trainer FOREIGN KEY ([TrainerId]) REFERENCES Trainer ([Id]),
 	CONSTRAINT FK_RaidMember_ConviteTrainer FOREIGN KEY ([ConviteTrainerId]) REFERENCES Trainer ([Id]),
 )

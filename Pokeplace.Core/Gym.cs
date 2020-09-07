@@ -2,7 +2,7 @@
 
 namespace Pokeplace.Core
 {
-    public class Gym : BaseDbEntity
+    public class Gym : BaseDbEntity<Gym>
     {
         public string Nome { get; set; }
         public decimal Latitude { get; set; }

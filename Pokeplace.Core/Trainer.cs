@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Pokeplace.Core
 {
-    public class Trainer : BaseDbEntity
+    public class Trainer : BaseDbEntity<Trainer>
     {
         public string Nome { get; set; }
         public string Apelido { get; set; }
