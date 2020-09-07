@@ -12,6 +12,7 @@ namespace Pokeplace.Core
         public int TrainerId { get; set; }
         public bool DisponivelRaidPresencial { get; set; }
         public bool DisponivelRaidRemota { get; set; }
+        public int NivelPrivacityLevelId { get; set; }
         public int CelularPrivacityLevelId { get; set; }
         public int EmailPrivacityLevelId { get; set; }
 

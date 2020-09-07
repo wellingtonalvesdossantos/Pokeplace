@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokeplace.Test", "Pokeplace
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokeplace.Core", "Pokeplace.Core\Pokeplace.Core.csproj", "{B2B64401-A2C5-4F82-B0AA-9D3F4F0B959C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokeplace.AppService", "Pokeplace.AppService\Pokeplace.AppService.csproj", "{2A74ECFD-F9BC-43E6-9E62-2388143E2D5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B2B64401-A2C5-4F82-B0AA-9D3F4F0B959C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2B64401-A2C5-4F82-B0AA-9D3F4F0B959C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2B64401-A2C5-4F82-B0AA-9D3F4F0B959C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A74ECFD-F9BC-43E6-9E62-2388143E2D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A74ECFD-F9BC-43E6-9E62-2388143E2D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A74ECFD-F9BC-43E6-9E62-2388143E2D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A74ECFD-F9BC-43E6-9E62-2388143E2D5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

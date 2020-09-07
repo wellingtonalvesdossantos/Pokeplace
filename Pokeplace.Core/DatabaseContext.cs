@@ -20,7 +20,7 @@ namespace Pokeplace.Core
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            Configuration.LazyLoadingEnabled = false;
+            //Configuration.LazyLoadingEnabled = false;
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             
             modelBuilder.Entity<Gym>();

@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Pokeplace.AppService\Pokeplace.AppService.csproj" />
     <ProjectReference Include="..\Pokeplace.Core\Pokeplace.Core.csproj" />
   </ItemGroup>
 
